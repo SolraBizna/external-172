@@ -63,6 +63,8 @@ Most switches should be normally-open toggle switches. Exceptions:
 - Standby: should be one toggle (on) and one momentary (test) switch, or one two-sided toggle (whose TEST side may optionally be momentary)
 - Parking brake: should be two momentary switches, or one two-sided momentary switch, or—because you can disengage the parking brake by stepping on the toe brake pedals—just one momentary switch.
 
+It will light the built-in LED on the board if any control is in a non-zeroed state, and it will *blink* that built-in LED if the host doesn't seem to be responding to the test switch.
+
 # License
 
 Public domain.

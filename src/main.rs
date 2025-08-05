@@ -279,11 +279,11 @@ fn main() -> ! {
             }
         }
         prev_scan_index = scan_index;
-        let standby_on = standby_state.unwrap_or(now / 100000 % 2 != 0);
+        let standby_on = standby_state.unwrap_or(now / 100000 % 5 != 0);
         let _ = standby_test_led.set_state(standby_on.into());
         on_board_led
             .set_state(
-                (any_lit || (standby_on && standby_state.is_none())).into(),
+                (any_lit ^ (standby_on && standby_state.is_none())).into(),
             )
             .unwrap();
     }
