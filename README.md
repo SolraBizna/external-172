@@ -34,7 +34,7 @@ It expects the switches to be connected between GND and the following GPIO pins:
 - 0: `bat=1`: Battery
 - 1: `alt=1`: Alternator
 - 2: `av1=1`: Avionics bus 1
-- 3: `av2=1`: Avionics bus 2
+- 3: `av2=1`: Avionics bus 2 (ignored on the G1000)
 - 4: `ph=1`: Pitot heaters
 - 5: `fp=1`: Electric fuel pump
 - 6: `lb=1`: Beacon (ground recognition light)
@@ -50,7 +50,7 @@ It expects the switches to be connected between GND and the following GPIO pins:
 - 16: `fl=+`: Flaps RETRACT (optional)
 - 17: `fl=-`: Flaps EXTEND (optional)
 - 18: `sb=1`: Standby instrument power on (G1000 only, optional)
-- 19: `sb=?`: Standby instrument power + anunciator test (G1000 only, optional)
+- 19: `sb=?`: Standby instrument power + annunciator test (G1000 only, optional)
 - 20: `pb=-`: Disengage parking brake (optional)
 - 21: `pb=1`: Engage parking brake (optional)
 
